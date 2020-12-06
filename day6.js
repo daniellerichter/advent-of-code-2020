@@ -8,14 +8,9 @@ const forms = fileData.split('\n\n');
 let sum =0;
 
 forms.forEach(form => {
-    const individuals = form.split('\n');
-    let answers = [...individuals[0]];
-    individuals.forEach(response => {
-        answers = answers.filter(answer => response.includes(answer));
-    });
-
-    sum = sum + answers.length;
+    const individuals = form.split('\n').join('');
+    const set = new Set(Array.from(individuals));
+    sum = sum + set.size;
 })
 
 console.log('sum', sum);
-
