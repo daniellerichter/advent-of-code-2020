@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const fileData = fs.readFileSync('./input5.txt').toString();
+const fileData = fs.readFileSync('./input/input5.txt').toString();
 
 const passes = fileData.split('\n');
 

@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const fileData = fs.readFileSync('./input6.txt').toString();
+const fileData = fs.readFileSync('./input/input6.txt').toString();
 
 const forms = fileData.split('\n\n');
 let sum =0;

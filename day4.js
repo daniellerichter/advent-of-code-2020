@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const fileData = fs.readFileSync('./input4.txt').toString();
+const fileData = fs.readFileSync('./input/input4.txt').toString();
 
 const passports = fileData.split('\n\n');
 

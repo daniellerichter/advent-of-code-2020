@@ -4,7 +4,7 @@ var fs = require('fs');
 
 
 console.time();
-const fileData = fs.readFileSync('./input.txt').toString();
+const fileData = fs.readFileSync('./input/input.txt').toString();
 
 
 let lines = fileData.split('\n').map(x => Number(x));
